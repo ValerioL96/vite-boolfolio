@@ -1,7 +1,10 @@
 <script >
+import MainProjectCard from './MainProjectCard.vue';
+
 
 export default  {
     components:{
+        MainProjectCard,
     },
 
     data(){
@@ -15,12 +18,10 @@ export default  {
 </script>
 
 <template>
-    <h1>
-        Main
-    </h1>
+    <MainProjectCard/>
 </template>
 
-<style scoped>
+<style lang="scss">
 
 </style>
 
