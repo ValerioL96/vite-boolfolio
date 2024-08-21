@@ -58,8 +58,8 @@ export default {
 
         </div>
 
-        <div class="row">
-            <h3 class="text-center text-body-secondary opacity-50">
+        <div class="row mb-3">
+            <h3 class="text-center text-success">
                 <a href="#" 
                     class="text-reset" 
                     @click.prevent="getProject(currentPage +1)">
