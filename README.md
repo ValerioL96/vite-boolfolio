@@ -38,3 +38,8 @@ Stampiamo in console i risultati e verifichiamo di ricevere i dati correttamente
 
 Creiamo un nuovo componente ProjectCard, che corrisponde ad una card per visualizzare un progetto.
 Utilizziamo questo componente per visualizzare tutti i progetti ricevuti tramite API.
+
+
+## Milestone 6
+
+Continuamo a lavorare sulle medesime repo, e ci occupiamo della gestione delle rotte all'interno della nostra pagina di front-office in Vue 3.

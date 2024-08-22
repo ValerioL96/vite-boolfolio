@@ -28,6 +28,7 @@ export default  {
   </header>
 
   <main>
+    <router-view></router-view>
     <AppMain/>
   </main>
 
