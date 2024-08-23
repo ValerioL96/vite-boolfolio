@@ -24,7 +24,8 @@ export default {
                     console.log(response.data.results);
 
                 })
-                .catch(function (error) {
+                .catch((error) => {
+                    this.$router.push({name: "404"});
                     console.log(error);
                 })
                 .finally(function () {

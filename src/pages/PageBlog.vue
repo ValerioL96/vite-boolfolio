@@ -1,5 +1,5 @@
 <script >
-import MainProjectCard from './MainProjectCard.vue';
+import MainProjectCard from '../components/MainProjectCard.vue';
 
 
 export default  {
