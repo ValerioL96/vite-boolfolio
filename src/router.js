@@ -1,10 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-
 import PageHome from './pages/PageHome.vue';
 import PageAbout from './pages/PageAbout.vue';
 import PageBlog from './pages/PageBlog.vue';
-
+import Error404 from './pages/errors/Error404.vue'; 
 
 const router = createRouter({
 
