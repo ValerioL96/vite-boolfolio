@@ -7,6 +7,26 @@
 body{
     background-color: black;
 }
+
+header{
+    background-color: whitesmoke;
+}
+
+main{
+    height: calc(100vh - 43.2px);
+    overflow-y: scroll;
+}
+
+footer{
+    background-color: whitesmoke;
+    z-index: 1;
+}
+
 h1{
     color: red;
 }
+
+.links{
+    text-decoration: none;
+    color: black;
+    }
