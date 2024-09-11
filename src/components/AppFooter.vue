@@ -111,10 +111,58 @@ export default  {
 <style lang="scss" scoped>
 
 
-.icon-image{
-    
+.navbar {
+    background-color: #f8f9fa; /* Colore di sfondo per il footer */
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.links {
+    text-decoration: none;
+    color: #343a40; /* Colore del testo */
+    transition: color 0.3s ease;
+}
+
+.links:hover {
+    color: #007bff; /* Colore del testo al passaggio del mouse */
+    text-decoration: underline;
+}
+
+.icon-image {
     height: 30px;
     width: 30px;
 }
 
+
+.nav-link {
+    text-decoration: none;
+    color: #343a40; /* Colore del testo */
+}
+
+.nav-link h6 {
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover h6 {
+    color: #007bff; /* Colore del testo al passaggio del mouse */
+}
 </style>
+
+
+

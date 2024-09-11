@@ -15,35 +15,23 @@ export default  {
 </script>
 
 <template>
-    <div class="about text-center text-danger">
-        <h1>About</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Consequatur dolor veniam nostrum eius ab debitis quas, 
-            iusto atque alias consectetur blanditiis adipisci dolorum placeat laboriosam similique ullam enim voluptates? 
-            Veniam?
-            Sed repudiandae obcaecati soluta delectus blanditiis laudantium explicabo reiciendis perferendis vero, 
-            quia expedita similique quae iusto et. Earum corrupti debitis fuga non, 
-            enim fugit itaque nisi vitae dolor, quo possimus.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Consequatur dolor veniam nostrum eius ab debitis quas, 
-            iusto atque alias consectetur blanditiis adipisci dolorum placeat laboriosam similique ullam enim voluptates? 
-            Veniam?
-            Sed repudiandae obcaecati soluta delectus blanditiis laudantium explicabo reiciendis perferendis vero, 
-            quia expedita similique quae iusto et. Earum corrupti debitis fuga non, 
-            enim fugit itaque nisi vitae dolor, quo possimus.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Consequatur dolor veniam nostrum eius ab debitis quas, 
-            iusto atque alias consectetur blanditiis adipisci dolorum placeat laboriosam similique ullam enim voluptates? 
-            Veniam?
-            Sed repudiandae obcaecati soluta delectus blanditiis laudantium explicabo reiciendis perferendis vero, 
-            quia expedita similique quae iusto et. Earum corrupti debitis fuga non, 
-            enim fugit itaque nisi vitae dolor, quo possimus.
-        </p>
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <h1 class="display-4 font-weight-bold">Boolfolio</h1>
+            <p class="lead">
+            Ho sviluppato una WebApp gestionale per la creazione,
+            gestione e modifica di progetti personali. Il BackOffice è stato
+            implementato con Laravel, sfruttando le API che vengono poi
+            consumate nel FrontOffice, sviluppato in Vue.js. L'app
+            consente una gestione centralizzata dei progetti, garantendo
+            flessibilità e facilità di aggiornamento grazie all'integrazione
+            tra le due tecnologie. In una prima fase, l’applicazione è stata
+            popolata con progetti fittizi, utilizzati a scopo di test.
+            Successivamente, ho inserito i miei progetti reali,
+            trasformando la WebApp nel mio portfolio personale, un vero
+            e proprio strumento per presentare il mio lavoro e le mie
+            </p>
+        </div>
     </div>
 </template>
 

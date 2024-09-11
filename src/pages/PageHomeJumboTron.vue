@@ -26,8 +26,9 @@ export default {
 </script>
 
 <template>
-    <!-- Aggiunto data-bs-interval per avere uno scorrimento automatico del carosello -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="container mb-4">
+        <!-- Aggiunto data-bs-interval per avere uno scorrimento automatico del carosello -->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
 
             <div 
@@ -37,14 +38,16 @@ export default {
                 :class="{ active: index === 0 }" 
             >
                 <div class="text-center">
-                    <h5 class="mb-3">{{ carouselImage.name }}</h5>
+                    <h5 class="m-3">{{ carouselImage.name }}</h5>
                     <img :src="carouselImage.image" alt="carousel-image" class="img-fluid w-50 border border-secondary rounded">
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 
 </style>

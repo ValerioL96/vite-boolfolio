@@ -44,10 +44,13 @@ export default {
     <div class="container">
         <div class="row d-flex align-items-center flex-column">
 
-            <div class="card mb-3 " style="width: 18rem;" v-for="project in projects">
+            <div class="card mb-3 " style="width: 40rem; height: 20rem;" v-for="project in projects">
 
-                <div class="card-body">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center ">
                     <h5 class="card-title">{{ project.id }}: {{ project.name }}</h5>
+                    <p class="card-text" >
+                        {{ project.type.name}}
+                    </p>
                     <p class="card-text">
                         <a :href="project.url_repo">
                             {{ project.url_repo }}
@@ -75,6 +78,43 @@ export default {
     
 </template>
 
-<style>
+<style scoped>
+.container {
+    margin-top: 2rem;
+}
 
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-text a:hover {
+    text-decoration: underline;
+}
+
+.row.mb-3 {
+    margin-top: 1rem;
+}
+
+.text-success {
+    color: #28a745;
+}
 </style>

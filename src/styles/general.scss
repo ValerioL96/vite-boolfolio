@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: black;
+    background-color:black
 }
 
 header{
@@ -13,8 +13,11 @@ header{
 }
 
 main{
-    height: calc(100vh - 43.2px);
+    height: calc(100vh - 40px);
     overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent; 
+
 }
 
 footer{

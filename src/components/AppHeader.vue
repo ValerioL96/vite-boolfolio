@@ -31,9 +31,13 @@ export default  {
 </script>
 
 <template>
-    <nav class="navbar  mb-4">
+    <nav class="navbar  ">
         <div class="container-fluid col-10">
-            <h2 class="navbar-brand">Boolfolio</h2>
+            <div class="logo d-flex">
+                <img src="../assets/icon/L.png" class="logo border border-2 rounded-circle mx-2" alt="">
+            <h1 class="navbar-brand fs-3" style="color: #7daae6; text-shadow: 1px 1px 0 #5a8fd1, -1px -1px 0 #5a8fd1, 1px -1px 0 #5a8fd1, -1px 1px 0 #5a8fd1;">Boolfolio</h1>
+            </div>
+            
             
                 <ul class="navbar-nav d-flex flex-row">
                     <li class="nav-item mx-4 " v-for="navItem in navLinkNames">
@@ -51,6 +55,10 @@ export default  {
 </nav>
 </template>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+.logo{
+    vertical-align:bottom;
+    height: 45px;
+    width: 45px;
+}
 </style>
