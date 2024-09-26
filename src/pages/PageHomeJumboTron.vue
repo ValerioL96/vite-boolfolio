@@ -26,28 +26,45 @@ export default {
 </script>
 
 <template>
-    <div class="container mb-4">
-        <!-- Aggiunto data-bs-interval per avere uno scorrimento automatico del carosello -->
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-inner">
-
-            <div 
-                v-for="(carouselImage, index) in carouselImagesList" 
-                :key="carouselImage.id" 
-                class="carousel-item"
-                :class="{ active: index === 0 }" 
-            >
-                <div class="text-center">
-                    <h5 class="m-3">{{ carouselImage.name }}</h5>
-                    <img :src="carouselImage.image" alt="carousel-image" class="img-fluid w-50 border border-secondary rounded">
+    <div class="jumbotron vh-100 d-flex justify-content-center align-items-center">
+        <div id="carousel" class="carousel slide w-100 h-100" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner h-100">
+                <div 
+                    v-for="(carouselImage, index) in carouselImagesList" 
+                    :key="carouselImage.id" 
+                    class="carousel-item h-100"
+                    :class="{ active: index === 0 }"
+                >
+                    <div class="text-center h-100">
+                        <img 
+                            :src="carouselImage.image" 
+                            alt="carousel-image" 
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                        >
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    
 </template>
 
-<style lang="scss" >
+<style lang="scss">
+.jumbotron {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    position: relative;
+    height: 100vh;
+    color: white;
+}
 
+.carousel-item {
+    transition: opacity 0.5s ease-in-out;
+}
+
+img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
 </style>
+
+

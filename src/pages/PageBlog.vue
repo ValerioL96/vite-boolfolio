@@ -18,7 +18,7 @@ export default  {
 </script>
 
 <template>
-    <div class="container m-4">
+    <div class="container">
         <MainProjectCard/>
     </div>
 </template>

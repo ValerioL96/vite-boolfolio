@@ -1,35 +1,79 @@
-*{
+/* Reset globale */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color:black
+/* Stile del body */
+body {
+    background: linear-gradient(135deg, #007bff 0%, #33aaff 50%, #0056b3 100%);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-attachment: fixed; /* Fissa il background durante lo scroll */
 }
 
-header{
-    background-color: whitesmoke;
+/* Stile per il contenitore principale */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Sfondo con trasparenza */
+    border-radius: 15px; /* Angoli arrotondati per il contenitore principale */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Margine superiore per distanziamento */
 }
 
-main{
-    height: calc(100vh - 40px);
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent; 
-
+/* Stile dell'header */
+header {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)); /* Sfondo sfumato */
+    padding: 15px 30px; /* Maggiore padding per più spazio */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombra più evidente */
+    position: relative; /* Per il posizionamento di eventuali elementi */
+    border-bottom: 2px solid rgba(0, 123, 255, 0.4); /* Bordi inferiori per evidenziare l'header */
 }
 
-footer{
-    background-color: whitesmoke;
-    z-index: 1;
+/* Stile del main */
+main {
+    height: calc(100vh - 80px); /* Altezza per contenere header e footer */
+    overflow-y: auto; /* Scroll verticale */
+    scrollbar-width: thin; /* Dimensioni della scrollbar */
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.1); /* Colori della scrollbar */
 }
 
-h1{
-    color: red;
+/* Stile del footer */
+footer {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)); /* Sfondo sfumato */
+    padding: 15px 30px; /* Maggiore padding per più spazio */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Ombra più evidente */
+    position: relative; /* Per il posizionamento di eventuali elementi */
+    border-top: 2px solid rgba(0, 123, 255, 0.4); /* Bordi superiori per evidenziare il footer */
 }
 
-.links{
-    text-decoration: none;
-    color: black;
-    }
+/* Stile degli h1 */
+h1 {
+    color: #007bff; /* Colore blu per un migliore contrasto */
+    margin-bottom: 1rem; /* Spazio inferiore */
+    font-size: 2rem; /* Aumentare la dimensione del testo */
+    text-align: center; /* Centratura del testo */
+}
+
+/* Stile dei link */
+.links {
+    text-decoration: none; /* Nessuna sottolineatura */
+    color: #007bff; /* Colore blu per i link */
+    transition: color 0.3s; /* Transizione per il colore */
+}
+
+.links:hover {
+    color: #0056b3; /* Colore blu più scuro al passaggio del mouse */
+}
+
+/* Aggiungere padding ai link nel footer */
+footer .links {
+    padding: 0 10px; /* Spaziatura orizzontale tra i link */
+}
+
+/* Aggiungere un effetto hover al footer */
+footer .links:hover {
+    text-decoration: underline; /* Sottolineare il link al passaggio del mouse */
+}
